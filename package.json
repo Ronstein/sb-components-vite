@@ -15,7 +15,7 @@
   "license": "MIT",
   "homepage": "https://rodrigo-pavez.com",
   "repository": {
-    "url": "https://Todo...",
+    "url": "https://github.com/Ronstein/sb-components-vite",
     "type": "git"
   },
   "files": [
@@ -30,6 +30,9 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
     "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "scripts": {
     "dev": "yarn run storybook",
     "build": "npm run clean && tsc && npm run copyfiles",
@@ -39,7 +42,8 @@
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_360fcd016eb16c1",
     "clean": "rimraf dist/",
-    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
+    "push:npm": "np"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.6.1",
@@ -62,6 +66,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "eslint-plugin-storybook": "^0.8.0",
+    "np": "^10.0.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rimraf": "^6.0.1",
